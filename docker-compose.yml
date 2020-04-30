@@ -6,3 +6,14 @@ services:
     - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=docker
+
+  db-mongo:
+    image: mongo
+    ports:
+    - "21017:21017"
+
+  db-redis:
+    image:  redis:alpine
+    ports:
+    - "6379:6379"
+
